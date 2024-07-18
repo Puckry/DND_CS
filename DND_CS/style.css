@@ -1,0 +1,105 @@
+body{
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(assets/img/OLD_PAPER_BG.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+#dnd .body{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    height: 85vh;
+    width: 75%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#dnd .stats{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    height: 85vh;
+    width: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    overflow: hidden;
+    float: left;
+    transition: 0.3s;
+}
+
+#dnd .objetos{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    height: 95vh;
+    width: 10.6%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    overflow: hidden;
+    float: right;
+    transition: 0.3s;
+}
+
+#dnd .head{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 10vh;
+    width: 75%;
+    transition: 0.3s;
+}
+
+#dnd .head-img{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 10vh;
+    width: 10%;
+    float: left;
+    transition: 0.3s;
+}
+
+#dnd .head-img:hover{
+    background-color: rgba(83, 83, 83, 0.4);
+}
+#dnd .head:hover{
+    background-color: rgba(83, 83, 83, 0.4);
+}
+#dnd .body:hover{
+    background-color: rgba(83, 83, 83, 0.4);
+}
+#dnd .objetos:hover{
+    background-color: rgba(83, 83, 83, 0.4);
+}
+#dnd .stats:hover{
+    background-color: rgba(83, 83, 83, 0.4);
+}
