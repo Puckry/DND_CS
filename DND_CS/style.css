@@ -1,6 +1,7 @@
 body{
     display: grid;
     font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
     background-image: url(assets/img/OLD_PAPER_BG1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -55,11 +56,6 @@ body{
     overflow: hidden;
     float: right;
     transition: 0.3s;
-}
-
-p{
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bolder;
 }
 
 #dnd .head{
@@ -118,4 +114,9 @@ p{
 }
 #dnd .stats:hover{
     background-color: rgba(83, 83, 83, 0.4);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
