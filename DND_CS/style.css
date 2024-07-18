@@ -58,16 +58,16 @@ body{
 }
 
 p{
-    margin-bottom: auto;
     font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
 
 #dnd .head{
     background-color: rgba(255, 255, 255, 0.4);
     border: 1px solid;
-    display: grid;
+    display: flex;
     align-items: center;
-    /* place-items: center; */
+    justify-items: auto;
     margin-left: 1%;
     margin-right: 1%;
     margin-top: auto;
@@ -75,7 +75,13 @@ p{
     height: 10vh;
     width: 75%;
     transition: 0.3s;
-    overflow: scroll;
+    overflow: hidden;
+}
+
+#dnd .head .head-info{
+    height: 10vh;
+    width: 20%;
+    display: inline-block;
 }
 
 #dnd .head::-webkit-scrollbar{
