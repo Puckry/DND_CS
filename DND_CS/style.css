@@ -1,7 +1,7 @@
 body{
     display: grid;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(assets/img/OLD_PAPER_BG.jpg);
+    font-family:'Courier New', Courier, monospace;
+    background-image: url(assets/img/OLD_PAPER_BG1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
@@ -57,12 +57,17 @@ body{
     transition: 0.3s;
 }
 
+p{
+    margin-bottom: auto;
+    font-family:'Courier New', Courier, monospace;
+}
+
 #dnd .head{
     background-color: rgba(255, 255, 255, 0.4);
     border: 1px solid;
     display: grid;
     align-items: center;
-    place-items: center;
+    /* place-items: center; */
     margin-left: 1%;
     margin-right: 1%;
     margin-top: auto;
@@ -70,6 +75,11 @@ body{
     height: 10vh;
     width: 75%;
     transition: 0.3s;
+    overflow: scroll;
+}
+
+#dnd .head::-webkit-scrollbar{
+    display: none;
 }
 
 #dnd .head-img{
@@ -87,7 +97,7 @@ body{
     float: left;
     transition: 0.3s;
 }
-
+ 
 #dnd .head-img:hover{
     background-color: rgba(83, 83, 83, 0.4);
 }
