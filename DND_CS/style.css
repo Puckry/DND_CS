@@ -2,18 +2,47 @@ body{
     display: grid;
     font-family:'Courier New', Courier, monospace;
     font-weight: bolder;
+    font-size: medium;
     background-image: url(assets/img/OLD_PAPER_BG1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
 }
 
+input{
+    background-color: transparent;
+    border: none;
+    width: 5vw;
+    transition: 0.3s;
+}
+
+input:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#genderinput{
+    width: 5vw;
+}
+
+#ageinput{
+    width: 5vw;
+    margin-left: 29px;
+}
+
 #dnd .body{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(119, 119, 119, 0.4);
     border: 1px solid;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    place-items: center;
+    justify-content: center;
     height: 85vh;
     width: 75%;
     margin-left: 1%;
@@ -25,10 +54,11 @@ body{
 }
 
 #dnd .stats{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(119, 119, 119, 0.4);
     border: 1px solid;
-    display: grid;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5%;
     place-items: center;
     height: 85vh;
     width: 10%;
@@ -42,7 +72,7 @@ body{
 }
 
 #dnd .objetos{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(119, 119, 119, 0.4);
     border: 1px solid;
     display: grid;
     align-items: center;
@@ -59,7 +89,7 @@ body{
 }
 
 #dnd .head{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(119, 119, 119, 0.4);
     border: 1px solid;
     display: flex;
     align-items: center;
@@ -85,7 +115,7 @@ body{
 }
 
 #dnd .head-img{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(119, 119, 119, 0.4);
     border: 1px solid;
     display: grid;
     align-items: center;
@@ -101,22 +131,94 @@ body{
 }
  
 #dnd .head-img:hover{
-    background-color: rgba(83, 83, 83, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 #dnd .head:hover{
-    background-color: rgba(83, 83, 83, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 #dnd .body:hover{
-    background-color: rgba(83, 83, 83, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 #dnd .objetos:hover{
-    background-color: rgba(83, 83, 83, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 #dnd .stats:hover{
-    background-color: rgba(83, 83, 83, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.stat_shape {
+	border-bottom: 50px solid rgba(71, 71, 71, 0.4);
+	border-left: 25px solid rgba(0, 0, 0, 0.4);
+	border-right: 25px solid rgba(0, 0, 0, 0.4);
+	height: 0;
+	width: 100px;
+    translate: 0% -15px;
+}
+
+.stat_mod{
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid;
+    height: 25px;
+    width: 50px;
+    translate: 0% -25px;
+}
+
+#strStat{
+    width: 130%;
+    height: 4vh;
+    margin-top: 5%;
+    translate: -12.5% 0%;
+    text-align: center;
+    font-size: larger;
+}
+#dexStat{
+    width: 130%;
+    height: 4vh;
+    margin-top: 5%;
+    translate: -12.5% 0%;
+    text-align: center;
+    font-size: larger;
+}
+#conStat{
+    width: 130%;
+    height: 4vh;
+    margin-top: 5%;
+    translate: -12.5% 0%;
+    text-align: center;
+    font-size: larger;
+}
+#intStat{
+    width: 130%;
+    height: 4vh;
+    margin-top: 5%;
+    translate: -12.5% 0%;
+    text-align: center;
+    font-size: larger;
+}
+#wisStat{
+    width: 130%;
+    height: 4vh;
+    margin-top: 5%;
+    translate: -12.5% 0%;
+    text-align: center;
+    font-size: larger;
+}
+#charStat{
+    width: 130%;
+    height: 4vh;
+    margin-top: 5%;
+    translate: -12.5% 0%;
+    text-align: center;
+    font-size: larger;
+}
+
+.stat_mod{
+    text-align: center;
+    font-size: larger;
 }
