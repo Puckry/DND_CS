@@ -28,3 +28,38 @@ function getCharModifier(){
     document.getElementById("charMod").innerHTML = Math.floor((charMod - 10)/2);
     console.log(charMod);
 }
+function getProfBonus(){
+    var LVL = document.getElementById("totalLevel").value;
+    var profBonus = document.getElementById("profBonus");
+    if (LVL >= 1 && LVL <= 4){
+        profBonus.innerHTML = "+2";
+        return console.log(LVL);
+    }
+    if (LVL >= 5 && LVL <= 8){
+        profBonus.innerHTML = "+3";
+        return console.log(LVL);
+    }
+    if (LVL >= 9 && LVL <= 12){
+        profBonus.innerHTML = "+4";
+        return console.log(LVL);
+    }
+    if (LVL >= 13 && LVL <= 16){
+        profBonus.innerHTML = "+5";
+        return console.log(LVL);
+    }
+    if (LVL >= 17 && LVL <= 20){
+        profBonus.innerHTML = "+6";
+        return console.log(LVL);
+    }
+}
+
+function getTotalLevel(){
+    let LVL = document.getElementById("totalLevel");
+    let classLVL = document.getElementById("classLevel");
+    let subClassLVL = document.getElementById("subClassLevel");
+
+    LVL.value = +classLVL.value + +subClassLVL.value;
+
+    getProfBonus();
+    return console.log(classLVL);
+}

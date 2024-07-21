@@ -8,33 +8,38 @@
 </head>
 <body>
     <div id="dnd">
+
+        <!-- OBJETOS -->
         <div class="objetos">
             <H1>OBJETOS</H1>
         </div>
+
+        <!-- HEAD IMG -->
 
         <div class="head-img">
             <H1>HEAD-IMG</H1>
         </div>
 
+        <!-- HEAD -->
         <div class="head">
             <div class="head-info">
-                <p>Level:<input type="number" value="1"> </p> 
-                <p>Race: <input type="text"></p>
+                <p>Total Level:<input type="number" value="" id="totalLevel" onchange="getProfBonus()" disabled> </p> 
+                <p>Race: <input type="text" placeholder="Click to change"></p>
             </div>
             <div class="head-info">
-                <p>Gender:<input type="text" id="genderinput"></p>
-                <p>Age:<input type="number" value="1" id="ageinput"></p>
+                <p>Gender:<input type="text" id="genderinput" placeholder="Click to change"></p>
+                <p>Age:<input type="number" value="" id="ageinput" placeholder="Click to change"></p>
             </div>
             <div class="head-info">
-                <p>Sub-class: </p>
-                <p>Sub-class LVL: </p>
+                <p>Class: <input type="text" value="" id="class"></p>
+                <p>Level: <input type="number" value="1" id="classLevel" onchange="getTotalLevel()"  placeholder="Click to change"></p>
             </div>
             <div class="head-info">
-                <p>EXP: </p>
-                <p>TO NEXT LEVEL: </p>
+                <p>Sub-class: <input type="text" value="" id="subClass"></p>
+                <p>Level: <input type="number" value="0" id="subClassLevel" onchange="getTotalLevel()" placeholder="Click to change"></p>
             </div>
             <div class="head-info">
-                <p>AC: </p>
+                <p>ASLDJKHASD: </p>
                 <p>ASKJDH: </p>
             </div>
             <div class="head-info">
@@ -88,7 +93,13 @@
         <!-- BODY -->
 
         <div class="body">
-            <h1>BODY</h1>
+            <div class="left-body">
+                <div class="profBonus">
+                    <h2>Proficiency Bonus</h2>
+                    <br>
+                    <div class="stat_mod" id="profBonus">0</div>
+                </div>
+            </div>
         </div>
 
     </div>
